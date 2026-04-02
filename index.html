@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zikirce - Gizlilik Politikası</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #D4A574;
+            --background: #0A0A0A;
+            --card-bg: #1A1A1A;
+            --text-main: #F7F1E5;
+            --text-muted: #888888;
+            --border: #2A2A2A;
+            --accent: #20D4A574;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--background);
+            color: var(--text-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .logo-placeholder {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--primary), #B28247);
+            border-radius: 20px;
+            margin: 0 auto 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 32px;
+            color: #000;
+            box-shadow: 0 10px 30px rgba(212, 165, 116, 0.2);
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            letter-spacing: -1px;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 18px;
+        }
+
+        section {
+            background-color: var(--card-bg);
+            border-radius: 24px;
+            padding: 40px;
+            margin-bottom: 30px;
+            border: 1px solid var(--border);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+
+        h2 {
+            font-size: 20px;
+            color: var(--primary);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        h2::before {
+            content: '';
+            display: inline-block;
+            width: 4px;
+            height: 20px;
+            background: var(--primary);
+            border-radius: 2px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 16px;
+            color: #E0E0E0;
+        }
+
+        ul {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 28px;
+            margin-bottom: 12px;
+            color: #E0E0E0;
+        }
+
+        ul li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 1px solid var(--border);
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        .highlight {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 40px 15px;
+            }
+            h1 { font-size: 28px; }
+            section { padding: 30px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="logo-placeholder">Z</div>
+        <h1>Zikirce</h1>
+        <p class="subtitle">Gizlilik Politikası</p>
+    </header>
+
+    <section>
+        <h2>Giriş</h2>
+        <p>Akarworks tarafından geliştirilen <span class="highlight">Zikirce</span>, ibadetlerinizi düzenlemenize yardımcı olan bir asistan uygulamasıdır. Gizliliğiniz bizim için her şeyden daha değerlidir. Bu politika, uygulamamızı kullandığınızda verilerinizin nasıl yönetildiğini açıklar.</p>
+    </section>
+
+    <section>
+        <h2>Toplanan Veriler</h2>
+        <p>Zikirce, temel işlevlerini yerine getirmek için aşağıdaki verileri yerel cihazınızda saklar:</p>
+        <ul>
+            <li>Zikir sayaçlarınız ve geçmiş loglarınız.</li>
+            <li>Hatim takibi verileri (okuduğunuz cüz ve sayfa bilgileri).</li>
+            <li>Seçtiğiniz profil ismi ve yerel profil fotoğrafınız.</li>
+            <li>Uygulama ayarlarınız (ses, titreşim, tema tercihleri).</li>
+        </ul>
+        <p>Bu verilerin tamamı <span class="highlight">yalnızca sizin cihazınızda</span> tutulur ve biz hiçbir şekilde merkezi bir sunucuya bu verileri aktarmayız.</p>
+    </section>
+
+    <section>
+        <h2>Konum Verileri</h2>
+        <p>Uygulamamızdaki Namaz Vakitleri özelliği, bulunduğunuz konuma göre en doğru vakitleri hesaplamak için konumunuza ihtiyaç duyar.</p>
+        <ul>
+            <li>Konumunuz sadece en yakın şehri belirlemek için kullanılır.</li>
+            <li>Konum geçmişiniz tutulmaz veya paylaşılmaz.</li>
+            <li>İstediğiniz zaman konum iznini iptal edebilirsiniz.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Bulut Yedekleme (Google Drive)</h2>
+        <p>Zikir verilerinizi kaybetmemeniz için isteğe bağlı olarak Google Drive yedekleme özelliği sunulmaktadır.</p>
+        <ul>
+            <li>Giriş yaptığınızda sadece uygulamanın kendi oluşturduğu yedek dosyasına erişilir.</li>
+            <li>Google Drive'daki diğer dosyalarınıza erişim iznimiz yoktur.</li>
+            <li>OAuth 2.0 protokolü ile güvenli kimlik doğrulama yapılır; şifreniz bize asla ulaşmaz.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Üçüncü Taraf Hizmetler</h2>
+        <p>Uygulamamız aşağıdaki üçüncü taraf hizmetleri kullanabilir:</p>
+        <ul>
+            <li><strong>Google API Services:</strong> Bulut yedekleme ve konum analizi için.</li>
+            <li><strong>Sistem Bildirimleri:</strong> İbadet hatırlatıcıları ve motivasyon mesajları göndermek için.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Veri Silme Hakkı</h2>
+        <p>Uygulama içindeki "Verileri Sıfırla" seçeneği ile cihazınızdaki tüm kayıtları anında silebilirsiniz. Uygulamayı sildiğinizde cihazınızdaki tüm yerel veriler otomatik olarak kaldırılır. Google Drive'daki yedeğinizi silmek için Google Drive ayarlarınızdan uygulama izinlerini kaldırmanız yeterlidir.</p>
+    </section>
+
+    <section>
+        <h2>İletişim</h2>
+        <p>Gizlilik politikamızla ilgili herhangi bir sorunuz varsa bizimle iletişime geçebilirsiniz:</p>
+        <p class="highlight">iletisim@akarworks.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Akarworks. Tüm hakları saklıdır.</p>
+        <p>Son Güncelleme: 2 Nisan 2026</p>
+    </footer>
+</div>
+
+</body>
+</html>
